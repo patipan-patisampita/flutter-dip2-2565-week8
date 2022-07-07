@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'login.dart';
+
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key); //1.constructor
 
@@ -50,7 +52,7 @@ class Home extends StatelessWidget {
               leading: Icon(Icons.login,color: Colors.indigo,size: 30),
               onTap: (){
                 // Navigator.pop(context);
-                Navigator.push(context, MaterialPageRoute(builder: (context) => Home()));
+                Navigator.push(context, MaterialPageRoute(builder: (context) => LoginPage()));
               },
             ),
             ListTile(
