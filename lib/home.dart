@@ -37,6 +37,30 @@ class Home extends StatelessWidget {
                 Navigator.push(context, MaterialPageRoute(builder: (context) => Home()));
               },
             ),
+            ListTile(
+              title: Text("Contact",style: TextStyle(color: Colors.purple,fontSize: 14,fontWeight: FontWeight.bold)),
+              leading: Icon(Icons.contacts,color: Colors.indigo,size: 30),
+              onTap: (){
+                // Navigator.pop(context);
+                Navigator.push(context, MaterialPageRoute(builder: (context) => Home()));
+              },
+            ),
+            ListTile(
+              title: Text("Login",style: TextStyle(color: Colors.purple,fontSize: 14,fontWeight: FontWeight.bold)),
+              leading: Icon(Icons.login,color: Colors.indigo,size: 30),
+              onTap: (){
+                // Navigator.pop(context);
+                Navigator.push(context, MaterialPageRoute(builder: (context) => Home()));
+              },
+            ),
+            ListTile(
+              title: Text("Exit",style: TextStyle(color: Colors.purple,fontSize: 14,fontWeight: FontWeight.bold)),
+              leading: Icon(Icons.logout,color: Colors.indigo,size: 30),
+              onTap: (){
+                // Navigator.pop(context);
+                Navigator.push(context, MaterialPageRoute(builder: (context) => Home()));
+              },
+            ),
           ],
         ),
       ),
