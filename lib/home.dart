@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'contact.dart';
 import 'login.dart';
 
 class Home extends StatelessWidget {
@@ -44,7 +45,7 @@ class Home extends StatelessWidget {
               leading: Icon(Icons.contacts,color: Colors.indigo,size: 30),
               onTap: (){
                 // Navigator.pop(context);
-                Navigator.push(context, MaterialPageRoute(builder: (context) => Home()));
+                Navigator.push(context, MaterialPageRoute(builder: (context) => ContactPage()));
               },
             ),
             ListTile(
