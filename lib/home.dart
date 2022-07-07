@@ -29,7 +29,14 @@ class Home extends StatelessWidget {
                 backgroundImage: NetworkImage("https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg/220px-Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg"),
               ),
             ),
-            ListTile()
+            ListTile(
+              title: Text("Home",style: TextStyle(color: Colors.purple,fontSize: 14,fontWeight: FontWeight.bold)),
+              leading: Icon(Icons.home,color: Colors.indigo,size: 30),
+              onTap: (){
+                // Navigator.pop(context);
+                Navigator.push(context, MaterialPageRoute(builder: (context) => Home()));
+              },
+            ),
           ],
         ),
       ),
