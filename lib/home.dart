@@ -25,9 +25,11 @@ class Home extends StatelessWidget {
               accountName: Text("Mark Zuckerberg"),
               accountEmail: Text("mark@facebook.com"),
               currentAccountPicture: CircleAvatar(
-                child: Icon(Icons.android),
+                // child: Icon(Icons.android),
+                backgroundImage: NetworkImage("https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg/220px-Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg"),
               ),
-            )
+            ),
+            ListTile()
           ],
         ),
       ),
