@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 
-class Home extends StatelessWidget{
-  const Home({Key? key}):super(key: key); //1.constructor
+class Home extends StatelessWidget {
+  const Home({Key? key}) : super(key: key); //1.constructor
 
   @override
-  Widget build(BuildContext context){ //2.build
+  Widget build(BuildContext context) {
+    //2.build
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
@@ -12,17 +13,26 @@ class Home extends StatelessWidget{
       ),
       body: Center(
           child: Column(
-            children: [
-              Text("Welcome"),
-              Text("To Lungtoo"),
-            ],
-          )
-      ),
+        children: [
+          Text("Welcome"),
+          Text("To Lungtoo"),
+        ],
+      )),
       drawer: Drawer(
-        child: Text("Home"),
+        child: ListView(
+          children: [
+            UserAccountsDrawerHeader(
+              accountName: Text("Mark Zuckerberg"),
+              accountEmail: Text("mark@facebook.com"),
+              currentAccountPicture: CircleAvatar(
+                child: Icon(Icons.android),
+              ),
+            )
+          ],
+        ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: (){},
+        onPressed: () {},
         child: Icon(Icons.add),
       ),
     );
